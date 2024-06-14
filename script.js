@@ -8,7 +8,7 @@ const copaAmerica2024 = {
             games_played: 0,
             pro_goals: 0,
             ag_goal: 0,
-            points: 0            
+            points: 0
         },
         {
             name: "Canada",
@@ -65,7 +65,7 @@ const copaAmerica2024 = {
             pro_goals: 0,
             ag_goal: 0,
             points: 0
-        },        
+        },
         {
             name: "Bolivia",
             group: "C",
@@ -97,7 +97,7 @@ const copaAmerica2024 = {
             pro_goals: 0,
             ag_goal: 0,
             points: 0
-        },        
+        },
         {
             name: "Brasil",
             group: "D",
@@ -132,3 +132,17 @@ const copaAmerica2024 = {
         },
     ]
 };
+
+//console.log(copaAmerica2024.teams)
+
+const datos_copa_america = copaAmerica2024.teams;
+    
+ const recorrerpaices = datos_copa_america.map(({group,name})=>{
+    const tupla_grupo = [group,name]
+    return [group,name]
+ });
+
+
+  
+
+
