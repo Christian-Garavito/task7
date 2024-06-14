@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+
+.inicio_pagina{
+    display: flex;
+        width: 10rem;
+        height: 10rem;
+        color: black;
+
+}
