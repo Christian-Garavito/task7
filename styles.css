@@ -27,7 +27,7 @@ body {
 
 .group_div > .team_info {
     /* grid-area: titulo; */
-    color: red;
+    color: blueviolet;
 }
 .group_div > .team_info > h3 {
     /* grid-area: titulo; */
@@ -36,4 +36,18 @@ body {
 
 .group_div > .titulo_grupo {
     grid-area: titulo;
+}
+
+.forma_botones  {
+    padding: 1.5rem 2.5rem;
+    display: inline-block;
+    width: a;
+}
+.forma_botones p {
+    font-size: 1rem;
+}
+#botones{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
 }

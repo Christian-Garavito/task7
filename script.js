@@ -200,7 +200,13 @@ const dibujarTablas = (grupos) => {
 
 // Función para jugar la copa
 const jugarCopa = () => {
-    // for (let k = 0; k < grupos.length; k++) {
+    const grupos = structuredClone([
+        copaAmerica2024SinModificar.teams.filter(({ group }) => group === "A"),
+        copaAmerica2024SinModificar.teams.filter(({ group }) => group === "B"),
+        copaAmerica2024SinModificar.teams.filter(({ group }) => group === "C"),
+        copaAmerica2024SinModificar.teams.filter(({ group }) => group === "D"),
+    ]);
+     // for (let k = 0; k < grupos.length; k++) {
     //   const grupo = grupos[k];
     // }
 
@@ -212,17 +218,12 @@ const jugarCopa = () => {
     //   }
     //   console.log("============================");
     // }
-    // ? x***
-    // ? xx**
-    // ? xxx*
-    // ? xxxx
+    //   accp
+    // ? ax***
+    // ? cxx**
+    // ? cxxx*
+    // ? pxxxx
     // Creamos una copia estructurada de los grupos, filtrando por cada grupo
-    const grupos = structuredClone([
-        copaAmerica2024SinModificar.teams.filter(({ group }) => group === "A"),
-        copaAmerica2024SinModificar.teams.filter(({ group }) => group === "B"),
-        copaAmerica2024SinModificar.teams.filter(({ group }) => group === "C"),
-        copaAmerica2024SinModificar.teams.filter(({ group }) => group === "D"),
-    ]);
 
     // Iteramos sobre cada grupo
     for (const grupo of grupos) {
@@ -312,12 +313,20 @@ const jugarCopa = () => {
     copaAmerica2024.teams = teams_final;
 };
 
-// Función para exportar los resultados en un archivo JSON
+// Funcion para exportar los datos de los ganadores en un archivo JSON
 const exportarJson = () => {
-    var a = document.createElement("a");
-    var file = new Blob([JSON.stringify(ganadores, null, 2)], { type: "json" });
+    // crear un nuevo elemento un elemeto link(a) es una enlace temporal 
+    let a = document.createElement("a");
+    // crear un objeto blob datos planos con los datos de los ganadores en formato JSON
+    // stringify trasforma un objeto de javascrip a una cadena de texto valida para json  
+    // null lo va a convetir como el lo maneja string (no rempazo raros)
+    // 2 organizacion de informacion
+    let file = new Blob([JSON.stringify(ganadores, null,2)], { type: "json" });
+    //crear una URL parea el blob creado 
     a.href = URL.createObjectURL(file);
+    // establecer el nombre del archivo para las dercargas
     a.download = "resultados_copa_america.json";
+    // simular un clic en el enlace para iniciar la dercarga del archivo
     a.click();
 };
 
