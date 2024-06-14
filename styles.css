@@ -13,3 +13,41 @@ body {
         color: black;
 
 }
+
+
+.group_div {
+    display: grid;
+    grid-template-areas: 
+        "titulo titulo titulo titulo"
+        "a b c d";
+
+
+    /* background-color: red; */
+}
+
+.group_div > .team_info {
+    /* grid-area: titulo; */
+    color: blueviolet;
+}
+.group_div > .team_info > h3 {
+    /* grid-area: titulo; */
+    color: blue;
+}
+
+.group_div > .titulo_grupo {
+    grid-area: titulo;
+}
+
+.forma_botones  {
+    padding: 1.5rem 2.5rem;
+    display: inline-block;
+    width: a;
+}
+.forma_botones p {
+    font-size: 1rem;
+}
+#botones{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}

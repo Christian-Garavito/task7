@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Chile",
+    "group": "A",
+    "games_played": 3,
+    "pro_goals": 4,
+    "ag_goal": 2,
+    "points": 7
+  },
+  {
+    "name": "Canada",
+    "group": "A",
+    "games_played": 3,
+    "pro_goals": 4,
+    "ag_goal": 4,
+    "points": 3
+  },
+  {
+    "name": "Venezuela",
+    "group": "B",
+    "games_played": 3,
+    "pro_goals": 6,
+    "ag_goal": 7,
+    "points": 4
+  },
+  {
+    "name": "Mexico",
+    "group": "B",
+    "games_played": 3,
+    "pro_goals": 4,
+    "ag_goal": 2,
+    "points": 4
+  },
+  {
+    "name": "Panamá",
+    "group": "C",
+    "games_played": 3,
+    "pro_goals": 7,
+    "ag_goal": 3,
+    "points": 9
+  },
+  {
+    "name": "Bolivia",
+    "group": "C",
+    "games_played": 3,
+    "pro_goals": 6,
+    "ag_goal": 4,
+    "points": 4
+  },
+  {
+    "name": "Colombia",
+    "group": "D",
+    "games_played": 3,
+    "pro_goals": 5,
+    "ag_goal": 1,
+    "points": 7
+  },
+  {
+    "name": "Costa Rica",
+    "group": "D",
+    "games_played": 3,
+    "pro_goals": 4,
+    "ag_goal": 1,
+    "points": 7
+  }
+]
